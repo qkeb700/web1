@@ -3,6 +3,7 @@
 <head>
   <title>WEB1 - html</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179165943-1"></script>
 <script>
@@ -12,19 +13,26 @@
 
   gtag('config', 'UA-179165943-1');
 </script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="colors.js"></script>
 </head>
 
 <body>
-  <h1><a href="index.html" target="_blank" title="index">WEB</a></h1>
-  <ol>
-    <li><a href="1.html" target="_blank" title="html">HTML</a></li>
-    <li><a href="2.html" target="_blank" title="CSS">CSS</a></li>
-    <li><a href="3.html" target="_blank" title="JavaScript">JavaScript</a></li>
-  </ol>
-
-  <h2>WEB</h2>
-  <p>WEB is blah blah</p>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+  <h1><a href="index.html" title="index">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" title="html">HTML</a></li>
+      <li><a href="2.html" title="CSS">CSS</a></li>
+      <li><a href="3.html" title="JavaScript">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>WEB</h2>
+      <p>WEB usually refers to spider web, a silken structrue created by the animal.</p>
+    </div>
+  </div>
   <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){

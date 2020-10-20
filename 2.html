@@ -3,6 +3,8 @@
 <head>
   <title>WEB1 - CSS</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179165943-1"></script>
 <script>
@@ -12,19 +14,35 @@
 
   gtag('config', 'UA-179165943-1');
 </script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="colors.js"></script>
 </head>
 
 <body>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html" target="_blank" title="html">HTML</a></li>
-    <li><a href="2.html" target="_blank" title="CSS">CSS</a></li>
-    <li><a href="3.html" target="_blank" title="JS">JavaScript</a></li>
-  </ol>
-
-  <h2>CSS</h2>
-  <p>CSS is blah blah</p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" title="html">HTML</a></li>
+      <li><a href="2.html" title="CSS">CSS</a></li>
+      <li><a href="3.html" title="JS">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>CSS</h2>
+      <p>Cascading Style Sheets (CSS) is a style sheet language used
+        for describing the presentation of a document written in a markup language.
+        [1] Although most often used to set the visual style of web pages
+        and user interfaces written in HTML and XHTML, the language
+        can be applied to any XML document, including plain XML, SVG and XUL,
+        and is applicable to rendering in speech, or on other media.
+        Along with HTML and JavaScript, CSS is a cornerstone technology
+        used by most websites to create visually engaging webpages,
+        user interfaces for web applications, and user interfaces for
+        many mobile applications.</p>
+    </div>
+  </div>
   <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
